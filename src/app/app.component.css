@@ -4,3 +4,6 @@ input.ng-invalid{
 input.ng-valid{
 	border-left: 5px green solid;
 }
+.formstyle{
+	margin-top: 5px;
+}

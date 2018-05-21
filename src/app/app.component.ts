@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeroesComponent } from './heroes/heroes.component';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,5 @@ export class AppComponent {
 		console.log(value);
 	}
   title: string = 'Does That Really Work?';
+
 }
