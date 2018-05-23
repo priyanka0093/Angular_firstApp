@@ -3,13 +3,19 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component' ;
 import { HeroesComponent } from './heroes/heroes.component';
+import { EmployeeListComponent } from './employee-list.component';
+import { EmployeeDetailComponent } from './employee-detail.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent
+    HeroesComponent,
+    EmployeeListComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
