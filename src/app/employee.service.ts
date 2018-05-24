@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
 export class EmployeeService{
-	private _url:string="apidata/employeedata.json"
+	private _url:string="apidata/employeedata.json";
 	constructor(private _http: Http){}
 	getEmployeeInfo(){
 		return this._http.get(this._url)
-			.map((response:Response)=> response.json());
+			.map((response: Response)=> response.json());
 	}
 	getEmployee(){
 		return [
