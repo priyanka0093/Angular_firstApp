@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from './employee.service';
 
 @Component({
 	selector: 'employee-detail',
@@ -7,11 +8,14 @@ import { Component } from '@angular/core';
 				<li>{{employee.id}} {{employee.name | uppercase}}  {{employee.gender}} </li>
 			  </ul> `
 })
- export class EmployeeDetailComponent {
- 	employees =[
- 		{"id":1,"name":"andrew","gender":"Male"},
- 		{"id":2,"name":"Bradon","gender":"Male"},
- 		{"id":3,"name":"Christina","gender":"Female"},
- 		{"id":4,"name":"Elena","gender":"Female"}
- 	]
+ export class EmployeeDetailComponent  implements OnInit{
+ 	employees =[];
+ 	
+    constructor(private _employeeService: EmployeeService){}
+
+    ngOnInit(){
+    	// this.employees= this._employeeService.getEmployeeInfo();
+    	this._employeeService.getEmployeeInfo()
+    	.subscribe(resEmployeeData => this.employees = resEmployeeData);
+    }
  }
