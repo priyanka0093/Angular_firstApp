@@ -31,7 +31,6 @@ export class HeroesComponent implements OnInit {
   }
 
   
-
 // Module Driven Form
   // userForm2 =  new FormGroup({
   //   name: new FormControl('Priyanka', [Validators.required, Validators.minLength(4), Validators.maxLength(10)]),

@@ -3,10 +3,10 @@ import { EmployeeService } from './employee.service';
 
 @Component({
 	selector: 'employee-detail',
-	template: `<h2>EmployeeList</h2>
+	template: `<h2>Employee - Details</h2>
 			   <h3>{{errorMsg}}</h3>	
 			  <ul *ngFor= "let employee of employees" >
-				<li>{{employee.id}} {{employee.name | uppercase}}  {{employee.gender}} </li>
+				<li>{{employee.id}} - {{employee.name | uppercase}} - {{employee.gender}} </li>
 			  </ul> `
 })
  export class EmployeeDetailComponent  implements OnInit{

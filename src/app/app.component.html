@@ -2,8 +2,17 @@
   {{title}}
 </h1>
 <p>Hi, I'm Also Displaying...!</p>
-<employee-list></employee-list>
-<employee-detail></employee-detail>
+<nav>
+	<a routerLink="/departments" routerLinkActive="active">Departments</a>
+	<a routerLink = "/employees" routerLinkActive="active">Employees</a>
+	<a routerLink = "/employeedetails" routerLinkActive="active">Emp-Details</a>
+	<a routerLink = "/reactiveMDF" routerLinkActive="active">MDForm</a>	
+</nav>
+<router-outlet></router-outlet>
+<!-- 
+<department-list></department-list>
+<employee-list></employee-list> 
+<employee-detail></employee-detail> -->
 <!-- ***************** Templet Driven Form *************** -->
 <div class="container">
 	<h2>User data</h2>
@@ -51,4 +60,4 @@
 	</form>
 </div>
 
-<app-heroes></app-heroes>
+<!-- <app-heroes></app-heroes> -->

@@ -4,3 +4,16 @@ input.ng-invalid{
 input.ng-valid{
 	border-left: 5px green solid;
 }
+nav a{
+	padding: 5px 10px;
+	text-decoration:none;
+	margin-top: 10px;
+	display: inline-block;
+	background: #eee;
+	border-radius: 4px;
+}
+
+nav a:hover{
+	color:#039be5;
+	background-color: #CFD8DC;
+}

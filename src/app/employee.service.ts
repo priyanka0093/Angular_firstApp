@@ -28,4 +28,12 @@ export class EmployeeService{
  	]
 
 	}
+
+	getDepartmentInfo(){
+		return[
+		{"id":1,"name":"devlopment"},
+		{"id":2,"name":"testing"},
+		{"id":3,"name":"HR"}
+		]
+	}
 }

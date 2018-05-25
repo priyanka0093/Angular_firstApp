@@ -15,6 +15,7 @@ export class AppComponent {
 	onSubmit(value:any){
 		console.log(value);
 	}
+	
   title: string = 'Does That Really Work?';
 
 }
